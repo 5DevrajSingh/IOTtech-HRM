@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/toolbar_back">
+
+        <ImageView
+            android:elevation="@dimen/_10dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hrm_logo" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/waves"
+        android:tint="@color/purple_700" />
+
+    <!--    <com.hbb20.CountryCodePicker-->
+    <!--        android:layout_below="@id/imageView"-->
+    <!--        android:id="@+id/ccp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/please_enter_the_OTP"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.androidproject.iottechhrm.otpedittext.OtpEditText
+            android:inputType="number"
+            android:id="@+id/oev_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:digits="0123456789"
+            android:maxLength="6"
+            android:padding="32dp"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:oev_box_style="@string/style_square"
+            app:oev_mask_input="false"
+            app:oev_mask_character="*"
+            app:oev_primary_color="@color/purple_700"
+            app:oev_secondary_color="#DADADA"
+            app:oev_text_color="@color/black"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btn_submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/back_corner_gradient"
+        android:fontFamily="@font/baumans"
+        android:gravity="center"
+        android:padding="@dimen/_10dp"
+        android:text="@string/Continue"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_20dp" />
+
+</RelativeLayout>

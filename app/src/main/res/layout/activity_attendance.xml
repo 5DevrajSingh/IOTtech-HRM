@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:background="@color/light_app_theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_tool"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/toolbar_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/balthazar"
+                android:text="@string/Attendance"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:elevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"></ImageView>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
+            android:id="@+id/cv_claender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.androidproject.iottechhrm.util.CustomCalendarView
+                android:layout_margin="@dimen/_20dp"
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:background="@color/white"
+                app:calendarBackgroundColor="@color/white"
+                app:calendarTitleTextColor="@color/black"
+                app:currentDayOfMonthColor="@color/bgdark"
+                app:dayOfMonthTextColor="@color/black"
+                app:dayOfWeekTextColor="@color/black"
+                app:disabledDayBackgroundColor="@color/white"
+                app:disabledDayTextColor="@color/grey"
+                app:selectedDayBackgroundColor="@color/white"
+                app:titleLayoutBackgroundColor="@color/white"
+                app:weekLayoutBackgroundColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/logo_data"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/data_not_found"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

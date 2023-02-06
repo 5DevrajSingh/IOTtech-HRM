@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_5sp">5dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="corner_radius_form_input">3dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_25sp">25sp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_2sp">2dp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+
+    <dimen name="calendarTitlePaddingTop">8dp</dimen>
+    <dimen name="calendarTitlePaddingBottom">8dp</dimen>
+    <dimen name="weekTitlePaddingTop">8dp</dimen>
+    <dimen name="weekTitlePaddingBottom">8dp</dimen>
+    <dimen name="minDayCellHeight">40dp</dimen>
+
+    <dimen name="dateTitleTextSize">18sp</dimen>
+    <!--<dimen name="dateTitlePaddingBottom">5dp</dimen>-->
+    <!-- weekLayout -->
+    <dimen name="dayOfWeekTextSize">16sp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="_15sp">15sp</dimen>
+</resources>

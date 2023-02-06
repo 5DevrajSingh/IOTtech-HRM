@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OtpEditText">
+        <attr name="oev_length" format="integer|reference"/>
+        <attr name="oev_primary_color" format="color|reference" />
+        <attr name="oev_secondary_color" format="color|reference" />
+        <attr name="oev_text_color" format="color|reference" />
+
+        <attr name="oev_box_style" format="string|reference" />
+
+        <attr name="oev_mask_input" format="boolean" />
+        <attr name="oev_mask_character" format="string|reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CirculerImageView">
+        <!--<attr name="civ_border" format="boolean"/>-->
+        <!--<attr name="civ_border_width" format="dimension"/>-->
+        <!--<attr name="civ_border_color" format="color"/>-->
+        <!--<attr name="civ_shadow" format="boolean"/>-->
+        <!--<attr name="civ_shadow_color" format="color"/>-->
+        <!--<attr name="civ_shadow_radius" format="float"/>-->
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCalendarView">
+        <attr name="calendarTitleTextColor" format="color" />
+        <attr name="dayOfWeekTextColor" format="color" />
+        <attr name="dayOfMonthTextColor" format="color" />
+        <attr name="calendarBackgroundColor" format="color" />
+        <attr name="disabledDayBackgroundColor" format="color" />
+        <attr name="disabledDayTextColor" format="color" />
+        <attr name="selectedDayBackgroundColor" format="color" />
+        <attr name="selectedDayTextColor" format="color" />
+        <attr name="weekLayoutBackgroundColor" format="color" />
+        <attr name="titleLayoutBackgroundColor" format="color" />
+        <attr name="currentDayOfMonthColor" format="color" />
+    </declare-styleable>
+
+
+
+</resources>

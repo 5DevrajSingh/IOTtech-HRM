@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20dp"
+        android:background="@drawable/toolbar_back">
+
+        <RelativeLayout
+            android:id="@+id/rl_tool1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/balthazar"
+                android:padding="@dimen/_10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:elevation="@dimen/_10dp"
+                android:src="@drawable/logout_2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardimge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/rl_tool1"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_15sp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="2.5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/_5sp">
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_tool1"
+            android:layout_marginTop="@dimen/_5sp"
+            android:layout_toRightOf="@+id/cardimge"
+            android:fontFamily="@font/alike_angular"
+            android:padding="@dimen/_15sp"
+            tools:text="Dev Babu"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wish"
+            android:layout_toRightOf="@+id/cardimge"
+            android:fontFamily="@font/alike_angular"
+            android:paddingLeft="@dimen/_15sp"
+            android:paddingTop="@dimen/_5sp"
+            tools:text="Dev Babu"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_usermail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_designation"
+            android:layout_toRightOf="@+id/cardimge"
+            android:fontFamily="@font/alike_angular"
+            android:paddingLeft="@dimen/_15sp"
+            android:paddingTop="7dp"
+            tools:text="Dev Babu"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_tool"
+        android:background="@color/light_app_theme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.androidproject.iottechhrm.util.CustomGridRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sp"></com.androidproject.iottechhrm.util.CustomGridRecyclerView>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>
